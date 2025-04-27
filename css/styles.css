@@ -611,23 +611,22 @@ address {
 
 .footer-form-subscribe {
   display: flex;
+  gap: 24px;
   /* position: relative; */
 }
 
-.footer-input-email {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.email-input-text {
-  color: #ffff;
-  font-weight: 500;
-  font-size: 16px;
-  margin-bottom: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  margin-bottom: 16px;
+.footer-form-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .footer-subscribe {
@@ -638,7 +637,9 @@ address {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: auto;
   margin-left: auto;
   min-width: 165px;
@@ -651,6 +652,36 @@ address {
   right: 0px; */
 }
 
+.footer-icon-send {
+  margin-left: 16px;
+}
+
+.footer-input-email {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-email-text {
+  color: #ffff;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+/* .email-input-text {
+  color: #ffff;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+} */
+
 .modal-ovrlay {
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
@@ -662,9 +693,9 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* opacity: 0;
+  opacity: 0;
   pointer-events: none;
-  transition: opacity 150ms ease-in-out; */
+  transition: opacity 150ms ease-in-out;
 }
 
 .modal-ovrlay.is-open {
