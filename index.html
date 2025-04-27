@@ -64,7 +64,9 @@
       <section class="section-hero">
         <div class="container hero-section">
           <h1 class="page-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="order-service">Order Service</button>
+          <button type="button" class="button order-service">
+            Order Service
+          </button>
         </div>
       </section>
       <section class="section-advantages">
@@ -507,13 +509,38 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form">
+          <form class="footer-form-subscribe">
+            <div class="footer-input-email">
+              <label for="email-input" class="email-input-text">
+                Subscribe
+              </label>
+              <input
+                type="email-input"
+                name="email"
+                id="email-input"
+                placeholder="E-mail"
+              />
+            </div>
+            <button class="button footer-subscribe" type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="modal-ovrlay">
-      <div class="backdrop">
-        <form class="backdrop-form">
-          <fieldset class="">
-            <legend>Leave your contacts and we will call you back</legend>
+      <div class="popup">
+        <button class="popup-close">
+          <svg width="16" height="16" class="icon-popup-close">
+            <use href="./images/icons.svg#icon-close-popup"></use>
+          </svg>
+        </button>
+        <form class="popup-form">
+          <fieldset class="popup-section">
+            <legend class="popup-title">
+              Leave your contacts and we will call you back
+            </legend>
 
             <label class="form-label">
               Name<input
@@ -526,12 +553,18 @@
 
             <label class="form-label">
               Phone
+
+              <!-- <div class="input-sect">
+              <svg class="social-icon-input" width="24" height="24" fill="red">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg> -->
               <input
                 class="form-input"
                 type="number"
-                name="phone"
+                name="user_phone"
                 placeholder=""
               />
+              <!-- </div> -->
             </label>
 
             <label class="form-label">
@@ -550,19 +583,14 @@
                 rows="5"
                 name="feedback"
                 placeholder="Text input"
-              >
-              </textarea>
+              ></textarea>
             </label>
           </fieldset>
-
-          <!-- <fieldset>
-    <legend>Заголовок групи</legend>
-  </fieldset> -->
           <label
             ><input type="checkbox" name="rules" value="accept" />I accept the
             terms and conditions of the<a href="index.html">Privacy Policy</a>
           </label>
-          <button type="submit">Send</button>
+          <button type="submit" class="button submit">Send</button>
         </form>
       </div>
     </div>
