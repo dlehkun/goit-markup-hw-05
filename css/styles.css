@@ -669,7 +669,7 @@ address {
 }
 
 .icon-send {
-  fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .email-input-text {
@@ -746,11 +746,22 @@ address {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.icon-popup-close {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.popup-close:hover :has(input:hover) .icon-popup-close {
+  fill: #ffffff;
+}
+
+.popup-close:focus :has(input:focus) .icon-popup-close {
+  fill: #ffffff;
+}
+
 .popup-close:hover,
 .popup-close:focus {
   background-color: #404bbf;
   border: none;
-  fill: #ffffff;
 }
 
 .popup-text {
@@ -774,7 +785,7 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .popup-form {
@@ -834,7 +845,7 @@ address {
   transform: translateY(-50%);
 }
 
-.form-input:focus ::icon-popup-form {
+.form-input:focus {
   fill: #4d5ae5;
 }
 
