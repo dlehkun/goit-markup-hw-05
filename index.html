@@ -551,7 +551,7 @@
                 class="form-input"
                 id="user-name"
                 type="text"
-                name="ueser-name"
+                name="user-name"
               />
               <svg width="18" height="24" class="icon-popup-form">
                 <use href="./images/icons.svg#icon-icon-user_name"></use>
@@ -559,10 +559,10 @@
             </div>
           </div>
 
-          <div class="popup-form-input">
+          <div class="popup-form">
             <label class="form-label"> Phone</label>
 
-            <div class="input-sect">
+            <div class="popup-form-input">
               <input
                 class="form-input"
                 id="user-name"
@@ -576,10 +576,10 @@
             </div>
           </div>
 
-          <div class="popup-form-input">
+          <div class="popup-form">
             <label class="form-label">Email</label>
 
-            <div class="input-sect">
+            <div class="popup-form-input">
               <input
                 class="form-input"
                 id="user-name"
@@ -602,33 +602,33 @@
               placeholder="Text input"
               class="user-comment-form-popup"
             ></textarea>
-            <!-- <input
-                class="form-input"
-                id="user-name"
-                type="text"
-                name="ueser-name"
-              /> -->
-
-            <svg width="18" height="24" class="icon-popup-form">
-              <use href="./images/icons.svg#icon-icon-user_email"></use>
-            </svg>
           </div>
 
-          <label class="form-label">
-            Comment
-            <textarea
-              class="form-input"
-              rows="5"
-              name="feedback"
-              placeholder="Text input"
-            ></textarea>
-          </label>
+          <div class="form-agree">
+            <label
+              ><input
+                id="user-privacy"
+                type="checkbox"
+                name="user-privacy"
+                value="true"
+                class="visually-hidden"
+            /></label>
 
-          <label
-            ><input type="checkbox" name="rules" value="accept" />I accept the
-            terms and conditions of the<a href="index.html">Privacy Policy</a>
-          </label>
-          <button type="submit" class="button popupsubmit">Send</button>
+            <label for="user-privacy" class="agree-text">
+              <span class="checkbox-spot">
+                <svg width="10" height="8" class="icon-checkbox">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the<a
+                href="index.html"
+                class="our-rules"
+                >Privacy Policy</a
+              >
+            </label>
+
+            <button type="submit" class="button popupsubmit">Send</button>
+          </div>
         </form>
       </div>
     </div>
