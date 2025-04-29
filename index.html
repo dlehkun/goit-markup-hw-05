@@ -559,7 +559,7 @@
             </div>
           </div>
 
-          <div class="popup-form">
+          <div class="popup-form-text">
             <label class="form-label"> Phone</label>
 
             <div class="popup-form-input">
@@ -576,7 +576,7 @@
             </div>
           </div>
 
-          <div class="popup-form">
+          <div class="popup-form-text">
             <label class="form-label">Email</label>
 
             <div class="popup-form-input">
@@ -605,18 +605,17 @@
           </div>
 
           <div class="form-agree">
-            <label
-              ><input
-                id="user-privacy"
-                type="checkbox"
-                name="user-privacy"
-                value="true"
-                class="visually-hidden"
-            /></label>
+            <input
+              id="user-privacy"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              class="visually-hidden"
+            />
 
             <label for="user-privacy" class="agree-text">
               <span class="checkbox-spot">
-                <svg width="10" height="8" class="icon-checkbox">
+                <svg width="10" height="8" class="visually-hidden">
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
@@ -626,9 +625,9 @@
                 >Privacy Policy</a
               >
             </label>
-
-            <button type="submit" class="popupsubmit">Send</button>
           </div>
+
+          <button type="submit" class="button popupsubmit">Send</button>
         </form>
       </div>
     </div>
