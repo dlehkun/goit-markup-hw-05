@@ -434,7 +434,7 @@ address {
 }
 
 .example-card {
-  width: calc((100 - 48px) / 3);
+  width: calc((100% - 48px) / 3);
   position: relative;
   overflow: hidden;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -824,7 +824,7 @@ address {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus + .icon-popup-form {
+.form-input:focus + .icon-popup-form > .checkbox-spot {
   fill: #4d5ae5;
 }
 
